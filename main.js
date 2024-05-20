@@ -52,7 +52,7 @@ pkBtn.addEventListener("click", (e)=> {
             const pokemonHTML = `
             <div class="pokeError">
             <h3>¡Lo siento! Pero ese Pokemón no existe.<h3>  
-            <img src="https://c3.klipartz.com/pngpicture/273/798/sticker-png-pikachu-i-choose-you-sad-icon-thumbnail.png" alt="Ash.png"> 
+            <img src="https://c3.klipartz.com/pngpicture/273/798/sticker-png-pikachu-i-choose-you-sad-icon-thumbnail.png" alt="Pikachutriste.png"> 
             </div>
         `;
         contenedor.innerHTML += pokemonHTML; 
