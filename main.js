@@ -22,6 +22,13 @@ pkBtn.addEventListener("click", (e)=> {
     };
     
     obtenerPoke();
+
+    const pokeTypes = (types) => {
+        return types.map((tipo)=> {
+            return `<span class="${tipo.type.name} poke_type">${tipo.type.name}</span>`;
+        })
+        .join("");
+    }
     
     const templatePokemon = pokemon => {
         const {name, sprites, weight, height, types, abilities} = pokemon; 
@@ -30,9 +37,12 @@ pkBtn.addEventListener("click", (e)=> {
         const pokemonHTML = `
         <div class="pokeCard">
         <img src="${sprites.front_default}" alt="${name}"/>
+        <div class="types">
+            ${pokeTypes(types)}
+        </div>
         <ul class="infoList"> 
         <li>Nombre: ${name}</li>
-        <li>Tipo: ${types[0].type.name}</li>
+        
         <li>Habilidad: ${abilities[0].ability.name}</li>
         <li>Peso: ${weight/10} kg</li>
         <li>Altura: ${height/10} m</li>
@@ -58,8 +68,6 @@ pkBtn.addEventListener("click", (e)=> {
         contenedor.innerHTML += pokemonHTML; 
         }
     }
-    
     renderPokemon();
-
 })
 

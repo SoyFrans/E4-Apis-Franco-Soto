@@ -7,7 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 .welcome {
     background-image: url(https://i.blogs.es/3a5e33/pokemon/450_1000.webp);
     display: flex;
@@ -53,6 +52,7 @@
 }
 
 .pokeCard {
+    text-transform: uppercase;
     padding: 20px;
     margin: 10px;
     border-radius: 20px;
@@ -74,7 +74,7 @@
     width: 250px;
     text-align: center;
     font-weight: bold;
-    color:rgb(24, 2, 89)
+    color:rgb(24, 2, 89);
 }
 
 .pokeCard img {
@@ -104,3 +104,73 @@
     border-color: #ffcb05; 
     box-shadow: 0 0 10px rgba(255, 203, 5, 0.5); 
 }
+
+.fire, .dragon {
+    background-color: #ff0505;
+}
+
+.normal {
+    background-color: rgb(131, 131, 131);
+}
+
+.fighting {
+    background-color: #cc8029;
+}
+
+.flying, .stellar {
+    background-color: #157f99;
+}
+
+.poison {
+    background-color: #87038e;
+}
+
+.ground {
+    background-color: #69562d;
+}
+
+.rock {
+    background-color: #6e7080;
+}
+
+.bug {
+    background-color: #34802d;
+}
+
+.ghost, .dark {
+    background-color: #361e35;
+}
+
+.steel {
+    background-color: #b4b4b4;
+}
+
+.water, .ice {
+    background-color: #6f80ff;
+}
+
+.grass {
+    background-color: #604832;
+}
+
+.electric {
+    background-color: #a98a0e;
+}
+
+.psychic {
+    background-color: #684eed;
+}
+
+.types {
+    margin: 10px;
+}
+
+.poke_type {
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    font-weight: 600;
+    color: white;
+    margin: 5px;
+    border-radius: 10px;
+}
+
